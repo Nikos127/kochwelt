@@ -84,3 +84,56 @@ nav a:hover {
     border-radius: 8px;
     object-fit: cover;
 }
+
+/* rdt-section */
+
+.openRecipe {
+    background-color: rgb(0, 128, 0);
+    color: white;
+    padding: 12px 48px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 28px;
+}
+
+
+.rdt-section {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.rdt-section img {
+    width: 540px;
+    height: 340px;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover; 
+}
+
+
+.rdt-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 420px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.rdt-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.rdt-content p {
+    max-width: 1200px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+}
