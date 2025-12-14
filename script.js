@@ -1,6 +1,6 @@
-let inputElement = document.getElementById()
+let inputElement = document.getElementById('inputId');
 
-calculate(){
+function calculate(){
 
 
 }
