@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moussaka</title>
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="kochwelt_logo">
+
+        </div>
+        <nav>
+            <a href="index.html">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="#">Kontakt</a>
+            <a href="#">Impressum</a>
+        </nav>
+
+    </header>
+    <div class="separating_line"></div>
+    <main>
+        <h1>Moussaka</h1>
+        <div class="banner"></div>
+        <table class="recipe_info">
+            <tr>
+                <td class="recipe_time"><img src="./img/clock-regular.svg" alt="clock" width="20px"> 60 Min. </td>
+                <td class="recipe_time"><img src="./img/brain-solid.svg" alt="a_brain_vector" width="20px"> simpel </td>
+                <td class="recipe_time"><img src="./img/calendar-alt-regular.svg" alt="calender_vector"
+                        width="20px">12.12.2025</td>
+            </tr>
+        </table>
+        <div class="separating_line"></div>
+
+        <section class="portions">
+            <label for="number">Zutaten für</label>
+            <input class="number" name="number" type="number" min="1" max="20" value="4">
+            <button type="submit" onclick="calculate()">Portionen</button>
+        </section>
+
+        <table class="ingredients">
+            <tr>
+                <td>
+                    <p id="amount">600g Kartoffel(n)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>600g Aubergine(n)</td>
+            </tr>
+            <tr>
+                <td>500g Hackfleisch (beforzugt Lamm)</td>
+            </tr>
+            <tr>
+                <td>2 Zwiebel(n)</td>
+            </tr>
+            <tr>
+                <td>4 Knoblauchzehe(n)</td>
+            </tr>
+            <tr>
+                <td>1 gr. Dose(n) Tomate, geschälte</td>
+            </tr>
+            <tr>
+                <td>0.25TL Zimtpulver</td>
+            </tr>
+            <tr>
+                <td>4 Ei(er)</td>
+            </tr>
+            <tr>
+                <td>40g Butter</td>
+            </tr>
+            <tr>
+                <td>40g Mehl</td>
+            </tr>
+            <tr>
+                <td>375ml Milch</td>
+            </tr>
+            <tr>
+                <td>100g Parmesan, frisch gerieben</td>
+            </tr>
+            <tr>
+                <td>Salz und Pfeffer</td>
+            </tr>
+            <tr>
+                <td>Olivenöl</td>
+            </tr>
+            <tr>
+                <td>Muskat</td>
+            </tr>
+        </table>
+        <section>
+            <h2>Zubereitung</h2>
+            <table class="recipe_info">
+                <tr>
+                    <td class="recipe_time"><img src="./img/clock-regular.svg" alt="clock" width="20px"> ca. 60 Minuten
+                    </td>
+                    <td class="recipe_time"><img src="./img/clock-regular.svg" alt="a_brain_vector" width="20px">
+                        gesamtzeit ca. 2 Std. 50 Min.
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="logo_weiß">
+            <img src="./img/logo.png" alt="kochwelt_logo">
+        </div>
+        <div class="social_media">
+            <a href="https://facebook.com">
+                <img src="./img/Find-us-on-facebook.svg" alt="Find_us_on_facebook_vector">
+            </a>
+            <a href="https://instagram.com">
+                <img src="./img/follow-us-on-instagram-icon.svg" alt="follow_us_on_instagram_vector">
+            </a>
+            <a href="https://x.com/home">
+                <img src="./img/follow-us-on-twitter.svg" alt="follo_us_on_twitter_vector">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

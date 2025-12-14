@@ -4,11 +4,10 @@
     font-size: 20px;
 }
 
-
-
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 160px;
 }
 
 .logo img {
@@ -47,4 +46,104 @@ nav a:hover {
     background-color: #efefef80;
     height: 5px;
     box-shadow: 0 5px 5px 0 #efefef80;
+}
+
+main {
+    min-height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    padding: 100px 160px 24px;
+}
+
+.banner {
+    background-image: url(./img/Moussaka_slice.png);
+    background-position: center;
+    height: 200px;
+    width: cover;
+    border-radius: 16px;
+    margin: 0 160px;
+}
+
+.recipe_info {
+    border-collapse: separate;
+    border-spacing: 48px 24px;
+    margin-left: 112px;
+}
+
+.recipe_time {
+    background-color: #efefef;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+td img {
+    margin-right: 8px;
+}
+
+.portions {
+    padding: 24px 160px;
+}
+
+.number {
+    width: 160px;
+    height: 41px;
+    border-radius: 8px 0 0 8px;
+
+}
+
+button {
+    background-color: rgb(0, 128, 0);
+    border: none;
+    color: white;
+    width: 160px;
+    height: 48px;
+}
+
+tr:nth-child(odd) {
+    background-color: #efefef;
+}
+
+td {
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.ingredients {
+    width: 100%;
+    padding: 0 160px;
+}
+
+h2 {
+    padding: 24px 160px;
+    font-size: 28px;
+}
+
+.amount {
+    border: none;
+    background-color: #efefef80;
+    text-align: right;
+    width: 64px;
+}
+
+footer {
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 160px;
+}
+
+footer img {
+    width: 200px;
+    height: 60px;
+    margin-left: 32px;
+}
+
+.social_media img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.logo_weiß {
+    filter: invert(1);
 }
