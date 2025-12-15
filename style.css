@@ -120,7 +120,7 @@ main {
     height: 340px;
     display: block;
     border-radius: 8px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 
@@ -149,11 +149,15 @@ main {
 
 
 
+.headline {
+    padding: 100px 160px 24px;
+}
 
 h1 {
     font-size: 48px;
-    padding: 100px 160px 24px;
 }
+
+
 
 .banner {
     background-image: url(./img/Moussaka_slice.png);
