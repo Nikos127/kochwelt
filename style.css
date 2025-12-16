@@ -251,11 +251,15 @@ footer img {
 }
 
 
-/*new_rec_div section */
+/*new_rec_div section - Lust auf was Neues */
 
 
 p {
     font-size: 16px;
+}
+
+.new_rec_div h2{
+    text-align: center;
 }
 
 .new_rec_div {
