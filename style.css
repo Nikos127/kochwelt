@@ -1,102 +1,6 @@
-* {
-    margin: 0;
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-}
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 160px;
-}
-
-.logo img {
-    height: 96px;
-    width: auto;
-}
-
-nav {
-    display: flex;
-    gap: 30px;
-    padding-top: 64px;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 16px;
-}
-
-nav a:hover {
-    color: rgb(0, 128, 0);
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 5px;
-}
-
-.start {
-    color: rgb(0, 128, 0);
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 5px;
-}
-
-.separating_line {
-    background-color: #efefef80;
-    height: 5px;
-    box-shadow: 0 5px 5px 0 #efefef80;
-}
-
-main {
-    min-height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* vs-section */
-
-.vs-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 0 100px 0;
-    gap: 30px;
-    max-width: 1440px;
-    width: 100%;
-}
-
-.vs-section h2 {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.vs-section p {
-    max-width: 800px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555555;
-}
-
-.vs-content {
-    display: flex;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: center;
-}
-
-.vs-content img {
-    width: 250px;
-    height: 200px;
-    border-radius: 8px;
-    object-fit: cover;
-}
 
 /* rdt-section */
-
 
 .openRecipe {
     background-color: rgb(0, 128, 0);
@@ -109,7 +13,6 @@ main {
     margin-top: 28px;
 }
 
-
 .rdt-section {
     display: flex;
     gap: 36px;
@@ -119,7 +22,6 @@ main {
     margin-bottom: 80px;
 }
 
-
 .rdt-section img {
     width: 540px;
     height: 340px;
@@ -127,7 +29,6 @@ main {
     border-radius: 8px;
     object-fit: cover;
 }
-
 
 .rdt-content {
     display: flex;
@@ -138,150 +39,36 @@ main {
     text-align: left;
 }
 
-
 .rdt-content h1 {
     font-size: 36px;
     font-weight: 700;
 }
 
-
 .rdt-content p {
     max-width: 1200px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555555;
 }
-
-
-
-.headline {
-    padding: 100px 160px 24px;
-}
-
-h1 {
-    font-size: 48px;
-}
-
-
-
-.banner {
-    background-image: url(./img/Moussaka_slice.png);
-    background-position: center;
-    height: 200px;
-    width: cover;
-    border-radius: 16px;
-    margin: 0 160px;
-}
-
-.recipe_info {
-    border-collapse: separate;
-    border-spacing: 48px 24px;
-    margin-left: 112px;
-}
-
-.recipe_time {
-    background-color: #efefef;
-    border-radius: 8px;
-    padding: 8px 16px;
-}
-
-td img {
-    margin-right: 8px;
-}
-
-.portions {
-    padding: 24px 160px;
-}
-
-.number {
-    width: 160px;
-    height: 41px;
-    border-radius: 8px 0 0 8px;
-
-}
-
-button {
-    background-color: rgb(0, 128, 0);
-    border: none;
-    color: white;
-    width: 160px;
-    height: 48px;
-}
-
-tr:nth-child(odd) {
-    background-color: #efefef;
-}
-
-td {
-    padding: 24px;
-    border-radius: 8px;
-}
-
-.ingredients {
-    width: 100%;
-    padding: 0 160px;
-}
-
-h2 {
-    padding: 24px 160px;
-    font-size: 28px;
-}
-
-.amount {
-    border: none;
-    background-color: #efefef80;
-    text-align: right;
-    width: 64px;
-}
-
-footer {
-    background-color: rgb(35, 35, 35);
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 160px;
-}
-
-footer img {
-    width: 200px;
-    height: 60px;
-    margin-left: 32px;
-}
-
-.social_media img:hover {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-}
-
-.logo_weiß {
-    filter: invert(1);
-}
-
 
 /*new_rec_div section - Lust auf was Neues */
-
-
-p {
-    font-size: 16px;
-}
-
-.new_rec_div h2{
-    text-align: center;
-}
 
 .new_rec_div {
     padding: 50px 150px 80px;
     background-color: #EFEFEF;
 }
 
-.main-rec {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 40px;
+.new_rec_div h2{
+    text-align: center;
 }
 
 .new_rec_div img {
     height: 250px;
     aspect-ratio: 1 / 1;
     border-radius: 10px;
+}
+
+.main-rec {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
 }
 
 .rec_div {
@@ -291,7 +78,6 @@ p {
     font-weight: 600;
     gap: 12px;
 }
-
 
 .sec_my_rec {
     padding: 50px 150px;
@@ -332,8 +118,6 @@ p {
 
 }
 
-
-
 .prep_div {
     padding: 10px 150px;
 }
@@ -352,4 +136,41 @@ p {
     border-radius: 50%;
     width: 70px;
     margin-right: 40px;
+}
+
+/* vs-section */
+
+.vs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 100px 0;
+    gap: 30px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.vs-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.vs-section p {
+    max-width: 800px;
+}
+
+.vs-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.vs-content img {
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
 }
