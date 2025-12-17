@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./basis.css">
+    <link rel="stylesheet" href="./contact.css">
     <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +28,24 @@
         </nav>
     </header>
     
-    <div class="separating_line"></div>
-    
     <main>
-        <!-- Kontaktformular -->
+
+        <form class="contact-content" action="answer.html" method="get">
+            <h2>Kontaktiere uns</h2>
+                <div class="inputs">
+                    <p>Dein Name:</p><input type="text" name="name" required>
+                </div>
+                <div class="inputs">
+                    <p>Deine E-Mail:</p><input type="email" name="email" required>
+                </div>
+                <div class="inputs">
+                    <p>Deine Nachricht:</p><textarea name="Nachricht" required></textarea>
+                </div>
+                <div class="contact-button">
+                    <button type="submit">Abschicken</button>
+                </div>
+        </form>
+    
     </main>
 
     <footer>
