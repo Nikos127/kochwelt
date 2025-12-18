@@ -215,3 +215,16 @@
     border-radius: 8px;
     object-fit: cover;
 }
+
+.Impressum {
+    display: flex;
+    justify-content: center;
+}
+
+.impressum_content{
+    padding: 70px;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
