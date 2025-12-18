@@ -84,7 +84,8 @@
 /*new_rec_div section - Lust auf was Neues */
 
 .new_rec_div {
-    padding: 50px 150px 80px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     background-color: #EFEFEF;
     display: flex;
     flex-direction: column;
