@@ -1,94 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Original Spaghetti Carbonara</title>
-
-    <link rel="icon" type="image/png" href="./img/logo_small.png">
-
-    <link rel="stylesheet" href="./style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Rezept Vorlage</title>
+    <link rel="icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="basis.css">
+    <link rel="stylesheet" href="rezept.css">
+    <script src="./script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="kochwelt_logo">
 
-    <section class="sec_my_rec">
-        <h1>Spaghetti Carbonara</h1>
-        <img class="my_rec_img" src="./img/spaghetti_carbonara.jpg">
-        <div class="badge-info">
-            <div class="badge">
-                <img src="./img/clock-regular.svg" alt="Uhr">
-                <p>30 Min.
-                <p>
-            </div>
-            <div class="badge">
-                <img src="./img/brain-solid.svg" alt="Schwierigkeitslevel">
-                <p>Simple</p>
-            </div>
-            <div class="badge">
-                <img src="./img/calendar-alt-regular.svg" alt="Kalender">
-                <p>13.12.25</p>
-            </div>
         </div>
-    </section>
-    <section class="portion_div">
-        <div class="portion_counter_div">
-            <p>Zutaten für</p>
-            <input type="number" value="4" min="1" max="999">
-            <button>Portionen</button>
-        </div>
-        <table>
-                <tr>
-                    <td>100g Spaghetti</td>
-                </tr>
-                <tr>
-                    <td>40g Pancetta</td>
-                </tr>
-                <tr>
-                    <td>1 Ei (Größe M)</td>
-                </tr>
-                <tr>
-                    <td>25 g Pecorino Romano</td>
-                </tr>
-                <tr>
-                    <td>Frisch gemahlener schwarzer Pfeffer</td>
-                </tr>
-            </table>
-    </section>
-    <section class="prep_div">
-        <h3>Zubereitung</h3>
-        <div class="badge-info">
-            <div class="badge"><img src="./img/clock-regular.svg" alt="Uhr">
-                <p>ca. 15 Minuten
-                <p>
-            </div>
-            <div class="badge"><img src="./img/clock-regular.svg" alt="Uhr">
-                <p>Gesamtzeit ca. 30 Minuten
-                <p>
-            </div>
-        </div>
-        <p>Spaghetti in reichlich Salzwasser al dente kochen. Pancetta (oder Speck) in einer Pfanne knusprig auslassen.
-            Eier mit geriebenem Pecorino oder Parmesan und frisch gemahlenem Pfeffer verrühren. Nudeln abgießen, kurz
-            zur Pancetta geben und die Pfanne vom Herd ziehen. Die Eier-Käse-Mischung unterrühren, bis eine cremige
-            Sauce entsteht. Sofort servieren und nach Belieben mit extra Käse und Pfeffer verfeinern.</p>
-    </section>
-    <section class="cook_div">
-        <h4>Rezept erstellt von</h4>
-        <div class="cook_info">
-            <img class="cook_img" src="./img/Chrissi.jpeg" alt="">
-            <span>Christina</span>
-        </div>
-    </section>
+        <nav>
+            <a href="index.html">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="impress.html">Impressum</a>
+        </nav>
 
+    </header>
+
+    <main>
+        <section class="topic-content">
+            <h1>Spaghetti Carbonara</h1>
+            <img class="preview-image" src="./img/spaghetti_carbonara.jpg" alt="Spaghetti Carbonara">
+            <div class="quick-content">
+                <div class="quick-info">
+                    <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
+                    <p>30 Min</p>
+                </div>
+                <div class="quick-info">
+                    <img class="icons" src="./img/brain-solid.svg" alt="Gehirn Icon">
+                    <p>simpel</p>
+                </div>
+                <div class="quick-info">
+                    <img class="icons" src="./img/calendar-alt-regular.svg" alt="Kalender Icon">
+                    <p>12.12.2025</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <section class="recipe-content">
+            <div class="input-content">
+                <label for="portions">Zutaten für</label>
+                <input type="number" id="portions" value="1" min="1" max="99" required>
+                <button onclick="">Portionen</button>
+            </div>
+
+            <section class="ingredients-list">
+                <table>
+                    <tr>
+                        <td><span>100</span>g Spaghetti</td>
+                    </tr>
+                    <tr>
+                        <td><span>40</span>g Pancetta</td>
+                    </tr>
+                    <tr>
+                        <td><span>2</span> Ei (Größe M)</td>
+                    </tr>
+                    <tr>
+                        <td><span>25</span>g Pecorino Romano</td>
+                    </tr>
+                    <tr>
+                        <td><span>1</span>Prise Salz für das Nudelwasser</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="quick-section">
+                <h2>Zubereitung</h2>
+                <div class="quick-content">
+                    <div class="quick-info">
+                        <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
+                        <p>Vorbereitung ca. <span>10</span> Minuten</p>
+                    </div>
+                    <div class="quick-info">
+                        <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
+                        <p>Gesamtzeit ca. <span>30</span> Minuten</p>
+                    </div>
+                </div>
+                <p class="preparation">Spaghetti in reichlich Salzwasser al dente kochen. Pancetta (oder Speck) in einer Pfanne knusprig auslassen. Eier mit geriebenem Pecorino oder Parmesan und frisch gemahlenem Pfeffer verrühren. Nudeln abgießen, kurz zur Pancetta geben und die Pfanne vom Herd ziehen. Die Eier-Käse-Mischung unterrühren, bis eine cremige Sauce entsteht. Sofort servieren und nach Belieben mit extra Käse und Pfeffer verfeinern.</p>
+            </section>
+        </section>
+        <section class="created">
+            <h3>Rezept erstellt von</h3>
+            <div class="creator">
+                <img src="./img/Chrissi.jpeg" alt="Chrissi">
+                <p>Christina</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="logo_weiß">
+            <img src="./img/logo.png" alt="kochwelt_logo">
+        </div>
+        <div class="social_media">
+            <a href="https://facebook.com">
+                <img src="./img/Find-us-on-facebook.svg" alt="Find_us_on_facebook_vector">
+            </a>
+            <a href="https://instagram.com">
+                <img src="./img/follow-us-on-instagram-icon.svg" alt="follow_us_on_instagram_vector">
+            </a>
+            <a href="https://x.com/home">
+                <img src="./img/follow-us-on-twitter.svg" alt="follo_us_on_twitter_vector">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
