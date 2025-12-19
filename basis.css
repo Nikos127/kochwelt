@@ -106,3 +106,20 @@ footer img {
 .logo_weiß {
     filter: invert(1);
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+}
+
