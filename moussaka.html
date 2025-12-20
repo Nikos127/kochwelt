@@ -7,7 +7,7 @@
     <title>Moussaka</title>
     <link rel="icon" href="./img/logo_small.png">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
@@ -27,36 +27,40 @@
 
     </header>
     <div class="separating_line"></div>
+
+    <div class="headline">
+        <h1>Moussaka</h1>
+    </div>
+
+    <div class="banner">
+        <img src="./img/Moussaka_slice.png" alt="a_piece_of_moussaka">
+    </div>
+    <table class="recipe_info">
+        <tr>
+            <td class="recipe_time"><img src="./img/clock-regular.svg" alt="clock" width="20px"> 60 Min. </td>
+            <td class="recipe_time"><img src="./img/brain-solid.svg" alt="a_brain_vector" width="20px"> simpel </td>
+            <td class="recipe_time"><img src="./img/calendar-alt-regular.svg" alt="calender_vector"
+                    width="20px">12.12.2025</td>
+        </tr>
+    </table>
+    <div class="separating_line"></div>
+
+    <section class="portions">
+        <label for="number">Zutaten für</label>
+        <input id="number" class="number" name="number" type="number" min="1" max="20" value="4">
+        <button onclick="calculate('amount')">Portionen</button>
+    </section>
     <main>
-        <div class="headline">
-            <h1>Moussaka</h1>
-        </div>
-
-        <div class="banner"></div>
-        <table class="recipe_info">
-            <tr>
-                <td class="recipe_time"><img src="./img/clock-regular.svg" alt="clock" width="20px"> 60 Min. </td>
-                <td class="recipe_time"><img src="./img/brain-solid.svg" alt="a_brain_vector" width="20px"> simpel </td>
-                <td class="recipe_time"><img src="./img/calendar-alt-regular.svg" alt="calender_vector"
-                        width="20px">12.12.2025</td>
-            </tr>
-        </table>
-        <div class="separating_line"></div>
-
-        <section class="portions">
-            <label for="number">Zutaten für</label>
-            <input class="number" name="number" type="number" min="1" max="20" value="4">
-            <button type="submit" onclick="calculate()">Portionen</button>
-        </section>
-
         <table class="ingredients">
             <tr>
                 <td>
-                    <p id="amount">600g Kartoffel(n)</p>
+                    <p><span class="amount">600</span>g Kartoffel(n)</p>
                 </td>
             </tr>
             <tr>
-                <td>600g Aubergine(n)</td>
+                <td>
+                    <p><span class="amount">600</span>g Kartoffel(n)</p>
+                </td>
             </tr>
             <tr>
                 <td>500g Hackfleisch (beforzugt Lamm)</td>
@@ -98,19 +102,20 @@
                 <td>Muskat</td>
             </tr>
         </table>
-        <section>
-            <h2>Zubereitung</h2>
-            <table class="recipe_info">
-                <tr>
-                    <td class="recipe_time"><img src="./img/clock-regular.svg" alt="clock" width="20px"> ca. 60 Minuten
-                    </td>
-                    <td class="recipe_time"><img src="./img/clock-regular.svg" alt="a_brain_vector" width="20px">
-                        gesamtzeit ca. 2 Std. 50 Min.
-                    </td>
-                </tr>
-            </table>
-        </section>
     </main>
+    <section>
+        <h2>Zubereitung</h2>
+        <table class="recipe_info">
+            <tr>
+                <td class="recipe_time"><img src="./img/clock-regular.svg" alt="clock" width="20px"> ca. 60 Minuten
+                </td>
+                <td class="recipe_time"><img src="./img/clock-regular.svg" alt="a_brain_vector" width="20px">
+                    gesamtzeit ca. 2 Std. 50 Min.
+                </td>
+            </tr>
+        </table>
+    </section>
+
     <footer>
         <div class="logo_weiß">
             <img src="./img/logo.png" alt="kochwelt_logo">
@@ -128,5 +133,6 @@
         </div>
     </footer>
 </body>
+<script src="./script.js"></script>
 
 </html>

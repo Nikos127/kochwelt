@@ -165,12 +165,13 @@ h1 {
 
 
 .banner {
-    background-image: url(./img/Moussaka_slice.png);
-    background-position: center;
     height: 200px;
-    width: cover;
-    border-radius: 16px;
     margin: 0 160px;
+    padding-bottom: 24px;
+}
+
+.banner img {
+    border-radius: 16px;
 }
 
 .recipe_info {
