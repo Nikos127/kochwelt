@@ -16,87 +16,162 @@
 <body>
     <header>
         <div class="logo">
-            <a href="./index.html">
+            <a href="index.html">
                 <img src="./img/logo.png" alt="kochwelt_logo">
             </a>
         </div>
         <nav>
             <a href="index.html">Start</a>
             <a href="#">Rezept des Tages</a>
-            <a href="#">Kontakt</a>
-            <a href="#">Impressum</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="impress.html">Impressum</a>
         </nav>
 
     </header>
+
     <main>
-        <table class="ingredients">
-            <tr>
-                <td>
-                    <p><span class="amount">600</span>g Kartoffel(n)</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><span class="amount">600</span>g Kartoffel(n)</p>
-                </td>
-            </tr>
-            <tr>
-                <td>500g Hackfleisch (beforzugt Lamm)</td>
-            </tr>
-            <tr>
-                <td>2 Zwiebel(n)</td>
-            </tr>
-            <tr>
-                <td>4 Knoblauchzehe(n)</td>
-            </tr>
-            <tr>
-                <td>1 gr. Dose(n) Tomate, geschälte</td>
-            </tr>
-            <tr>
-                <td>0.25TL Zimtpulver</td>
-            </tr>
-            <tr>
-                <td>4 Ei(er)</td>
-            </tr>
-            <tr>
-                <td>40g Butter</td>
-            </tr>
-            <tr>
-                <td>40g Mehl</td>
-            </tr>
-            <tr>
-                <td>375ml Milch</td>
-            </tr>
-            <tr>
-                <td>100g Parmesan, frisch gerieben</td>
-            </tr>
-            <tr>
-                <td>Salz und Pfeffer</td>
-            </tr>
-            <tr>
-                <td>Olivenöl</td>
-            </tr>
-            <tr>
-                <td>Muskat</td>
-            </tr>
-        </table>
+        <section class="topic-content">
+            <h1>Moussaka</h1>
+            <img class="preview-image" src="./img/Moussaka_slice.png" alt="piece_of_moussaka">
+            <div class="quick-content">
+                <div class="quick-info">
+                    <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
+                    <p>60 Min</p>
+                </div>
+                <div class="quick-info">
+                    <img class="icons" src="./img/brain-solid.svg" alt="Gehirn Icon">
+                    <p>simpel</p>
+                </div>
+                <div class="quick-info">
+                    <img class="icons" src="./img/calendar-alt-regular.svg" alt="Kalender Icon">
+                    <p>12.12.2025</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <section class="recipe-content">
+            <div class="input-content">
+                <label for="portions">Zutaten für</label>
+                <input type="number" id="portions" value="4" min="1" max="99" required>
+                <button onclick="calculate()">Portionen</button>
+            </div>
+
+            <section class="ingredients-list">
+                <table>
+                    <tr>
+                        <td>
+                            <p><span class="amount">600</span>g Kartoffel(n)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">600</span>g Kartoffel(n)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">500</span>g Hackfleisch(beforzugt Lamm)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">2</span> Zwiebel(n)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">4</span> Knoblauchzehe(n)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">1</span> gr. Dose(n) Tomaten, geschälte</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">0.25</span>TL Zimtpulver</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">4</span> Ei(er)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">40</span>g Butter</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">40</span>g Mehl</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">375</span>ml Milch</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount">100</span>g Parmesan, frisch gerieben</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount"></span>
+                                Salz und Pfeffer</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount"></span>
+                                Olivenöl</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><span class="amount"></span>
+                                Muskat</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <section class="quick-section">
+                    <h2>Zubereitung</h2>
+                    <div class="quick-content">
+                        <div class="quick-info">
+                            <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
+                            <p>Vorbereitung ca. <span>10</span> Minuten</p>
+                        </div>
+                        <div class="quick-info">
+                            <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
+                            <p>Gesamtzeit ca. <span>15</span> Minuten</p>
+                        </div>
+                    </div>
+                    <p class="preparation">Zubereitungs Text</p>
+                </section>
+            </section>
+            <section class="created">
+                <h3>Rezept erstellt von</h3>
+                <div class="creator">
+                    <img src="./img/profile.png">
+                    <p>Niko</p>
+                </div>
+            </section>
+
     </main>
-    <section>
-        <h2>Zubereitung</h2>
-        <table class="recipe_info">
-            <tr>
-                <td class="recipe_time"><img src="./img/clock-regular.svg" alt="clock" width="20px"> ca. 60 Minuten
-                </td>
-                <td class="recipe_time"><img src="./img/clock-regular.svg" alt="a_brain_vector" width="20px">
-                    gesamtzeit ca. 2 Std. 50 Min.
-                </td>
-            </tr>
-        </table>
-    </section>
 
     <footer>
         <div class="logo_weiß">
-            <img src="./img/logo.png" alt="kochwelt_logo">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="kochwelt_logo">
+            </a>
         </div>
         <div class="social_media">
             <a href="https://facebook.com">
