@@ -151,7 +151,9 @@
 }
 
 @media (min-width:1440px) {
-    max-width: 1440px;
+    .main-rec {
+        max-width: 1440px;
+    }
 }
 
 /* vs-section */
