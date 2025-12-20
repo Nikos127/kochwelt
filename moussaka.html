@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moussaka</title>
     <link rel="icon" href="./img/logo_small.png">
-    <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="basis.css">
+    <link rel="stylesheet" href="rezept.css">
+    <script src="./script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
@@ -15,8 +16,9 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./img/logo.png" alt="kochwelt_logo">
-
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="kochwelt_logo">
+            </a>
         </div>
         <nav>
             <a href="index.html">Start</a>
@@ -26,30 +28,6 @@
         </nav>
 
     </header>
-    <div class="separating_line"></div>
-
-    <div class="headline">
-        <h1>Moussaka</h1>
-    </div>
-
-    <div class="banner">
-        <img src="./img/Moussaka_slice.png" alt="a_piece_of_moussaka">
-    </div>
-    <table class="recipe_info">
-        <tr>
-            <td class="recipe_time"><img src="./img/clock-regular.svg" alt="clock" width="20px"> 60 Min. </td>
-            <td class="recipe_time"><img src="./img/brain-solid.svg" alt="a_brain_vector" width="20px"> simpel </td>
-            <td class="recipe_time"><img src="./img/calendar-alt-regular.svg" alt="calender_vector"
-                    width="20px">12.12.2025</td>
-        </tr>
-    </table>
-    <div class="separating_line"></div>
-
-    <section class="portions">
-        <label for="number">Zutaten für</label>
-        <input id="number" class="number" name="number" type="number" min="1" max="20" value="4">
-        <button onclick="calculate('amount')">Portionen</button>
-    </section>
     <main>
         <table class="ingredients">
             <tr>

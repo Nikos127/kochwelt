@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="basis.css">
     <script src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,20 +17,19 @@
 <body>
     <header>
         <div class="logo">
+            <a href="./index.html">
             <img src="./img/logo.png" alt="kochwelt_logo">
-
+            </a>
         </div>
         <nav>
-            <a class="start" href="#">Start</a>
+            <a class="start" href="index.html">Start</a>
             <a href="#">Rezept des Tages</a>
-            <a href="#">Kontakt</a>
-            <a href="#">Impressum</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="impress.html">Impressum</a>
         </nav>
-
     </header>
-    <div class="separating_line"></div>
+    
     <main>
-
 
         <!-- Rezept des Tages -->
         <article aria-label="Rezept des Tages">
@@ -46,14 +46,17 @@
             </div>
         </article>
 
-
-        <section>
-            <!-- section "Lust auf was Neues?" -->
-            <div></div>
-            <div></div>
+        <!-- section "Lust auf was Neues?" -->
+        <section class="new_rec_div">
+            <h2>Lust auf was Neues?</h2>
+            <div class="main-rec">
+                <div class="rec_div"><a href="./moussaka.html"><img src="./img/Moussaka.png"></a><span>Moussaka</span></div>
+                <div class="rec_div"><a href="./arepa.html"><img src="./img/Arepa.jpeg"></a><span>Arepa</span></div>
+                <div class="rec_div"><a href="./spaghetti-carbonara-rezept.html"><img src="./img/spaghetti_carbonara.jpg"></a><span>Spaghetti Carbonara</span></div>
+            </div>
         </section>
 
-
+        <!-- Interessant zu Wissen Inhalt -->
         <section class="vs-section">
             <h2>Heißluftfritteuse vs Backofen<br> Effizienz-Wunder gegen den Küchen-Alleskönner</h2>
             <div class="vs-content">
@@ -70,6 +73,7 @@
         </section>
 
     </main>
+
     <footer>
         <div class="logo_weiß">
             <img src="./img/logo.png" alt="kochwelt_logo">
@@ -85,10 +89,7 @@
                 <img src="./img/follow-us-on-twitter.svg" alt="follo_us_on_twitter_vector">
             </a>
         </div>
-
-        <footer>
-
-        </footer>
+    </footer>
 
 </body>
 

@@ -1,0 +1,152 @@
+
+
+.topic-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 25px;
+    padding: 50px 0 80px 0;
+}
+
+.topic-content h1 {
+    font-weight: 500;
+}
+
+.preview-image {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.quick-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.quick-content {
+    display: flex;
+    gap: 30px;
+}
+
+.quick-info p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.icons {
+    height: 15px;
+    width: 15px;
+}
+
+.quick-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 8px;
+}
+
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.input-content {
+    display: flex;
+}
+
+.input-content label {
+    font-size: 16px;
+    margin: 0;
+    padding-right: 15px;
+    align-self: center;
+}
+
+.input-content input {
+    line-height: 36px;
+    width: 100px;
+    padding: 0;
+}
+
+.ingredients-list {
+    display: flex;
+    padding: 20px 0 30px 0;
+}
+
+.ingredients-list table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.ingredients-list td {
+    padding: 15px 0 15px 30px;
+    font-size: 16px;
+}
+
+.ingredients-list tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.ingredients-list tr td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.ingredients-list tr td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.preparation {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.created {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    padding: 20px 0 50px 0;
+    gap: 30px;
+}
+
+.created h3 {
+    margin: 0;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.creator img {
+    height: 75x;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.creator p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.line {
+    width: 100%;
+    max-width: 1440px;
+    height: 2px;
+    background-color: rgb(200, 200, 200);
+}
