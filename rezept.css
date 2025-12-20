@@ -175,17 +175,9 @@
         flex-direction: column;
         gap: 15px;
     }
-}
-
-@media (max-width: 450px) {
-    .quick-content {
-        flex-direction: column;
-        gap: 15px;
-    }
 
     .input-content {
         flex-direction: column;
-        gap: 10px;
     }
 
     .input-content label {
