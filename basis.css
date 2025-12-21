@@ -103,6 +103,17 @@ footer img {
     margin-left: 32px;
 }
 
+.social_media {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+
+.social_media img {
+    height: 35px;
+    width: auto;
+    margin-left: 30px
+}
 
 .social_media img:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
@@ -186,7 +197,7 @@ footer img {
         margin-left: 0;
     }
 
-     .social_media {
+    .social_media {
         display: flex;
         justify-content: flex-end;
         align-items: center;
