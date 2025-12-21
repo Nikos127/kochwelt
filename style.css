@@ -130,7 +130,6 @@
     padding: 40px 0 100px 0;
     gap: 30px;
     max-width: 1440px;
-    width: 100%;
 }
 
 .vs-section h2 {
@@ -144,8 +143,6 @@
 .vs-content {
     display: flex;
     gap: 40px;
-    max-width: 1200px;
-    width: 100%;
     justify-content: center;
 }
 
@@ -193,6 +190,19 @@
     .impressum_content {
         padding: 50px;
     }
+
+    .vs-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vs-section {
+        padding: 20px 20px 50px 20px;
+    }
+
+    .vs-section h2 {
+        font-size: 20px;
+    }
 }
 
 
@@ -211,6 +221,10 @@
     .rec_div img {
         height: 200px;
         aspect-ratio: 1 / 1;
+    }
+
+    .vs-content {
+        padding: 0 20px;
     }
 }
 
