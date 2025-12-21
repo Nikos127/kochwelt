@@ -53,7 +53,6 @@ nav a:hover {
 /* regular content */
 
 main {
-    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
