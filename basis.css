@@ -195,8 +195,8 @@ footer img {
     .social_media img {
         display: flex;
         justify-content: flex-end;
-        height: 25px;
+        height: 35px;
         width: auto;
-        margin-left: 40px
+        margin-left: 30px
     }
 }
