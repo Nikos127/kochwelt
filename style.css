@@ -157,9 +157,12 @@
 .impressum {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 50px;
+    width: 95%;
+    max-width: 500px;
+    height: 500px;
     background-color: #EFEFEF;
     border-radius: 10px;
     gap: 30px;
