@@ -3,6 +3,7 @@
 .contact-content {
     display: flex;
     flex-direction: column;
+    width: 500px;
     gap: 35px;
     background-color: rgb(214, 214, 214);
     border-radius: 12px;
@@ -11,7 +12,7 @@
 
 input {
     height: 30px;
-    width: 500px;
+    width: 100%;
     border-radius: 6px;
     border: 0;
 }
@@ -32,4 +33,11 @@ textarea {
 .contact-button {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 550px) {
+    .contact-content {
+        width: 85%;
+    }
+
 }

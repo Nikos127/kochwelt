@@ -56,21 +56,25 @@
     flex-direction: column;
     max-width: 1440px;
     width: 100%;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .input-content {
     display: flex;
+    gap: 15px;
 }
 
 .input-content label {
     font-size: 16px;
     margin: 0;
-    padding-right: 15px;
     align-self: center;
 }
 
-.input-content input {
+.portion-input {
+    display: flex;
+}
+
+.portion-input input {
     line-height: 36px;
     width: 100px;
     padding: 0;
@@ -149,4 +153,34 @@
     max-width: 1440px;
     height: 2px;
     background-color: rgb(200, 200, 200);
+}
+
+@media (max-width: 1440px) {
+    .topic-content {
+            padding: 50px 20px 50px 20px;
+    }
+
+    .recipe-content {
+        padding: 20px 20px;
+        width: auto;
+    }
+
+    .created {
+        padding: 20px 20px 50px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .quick-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input-content {
+        flex-direction: column;
+    }
+
+    .input-content label {
+        align-self: flex-start;
+    }
 }

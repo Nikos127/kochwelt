@@ -102,6 +102,7 @@
     height: 250px;
     aspect-ratio: 1 / 1;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .main-rec {
@@ -119,7 +120,63 @@
     gap: 12px;
 }
 
-/* Media Query 2.Section Lust auf was Neues? */
+
+
+/* vs-section */
+
+.vs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 100px 0;
+    gap: 30px;
+    max-width: 1440px;
+}
+
+.vs-section h2 {
+    text-align: center;
+}
+
+.vs-section p {
+    max-width: 800px;
+}
+
+.vs-content {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.vs-content img {
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.impressum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    max-width: 500px;
+    height: 500px;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.impressum_content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+
+/* Media Query für: 2.Section (Startseite), Impressum */
 
 @media (max-width: 767px) {
 
@@ -134,6 +191,19 @@
         gap: 60px;
         margin-top: 40px;
     }
+
+    .vs-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vs-section {
+        padding: 20px 20px 50px 20px;
+    }
+
+    .vs-section h2 {
+        font-size: 20px;
+    }
 }
 
 
@@ -144,9 +214,18 @@
         gap: 40px;
     }
 
+    .new_rec_div {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
     .rec_div img {
         height: 200px;
         aspect-ratio: 1 / 1;
+    }
+
+    .vs-content {
+        padding: 0 20px;
     }
 }
 
@@ -154,54 +233,4 @@
     .main-rec {
         max-width: 1440px;
     }
-}
-
-/* vs-section */
-
-.vs-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 0 100px 0;
-    gap: 30px;
-    max-width: 1440px;
-    width: 100%;
-}
-
-.vs-section h2 {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.vs-section p {
-    max-width: 800px;
-}
-
-.vs-content {
-    display: flex;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: center;
-}
-
-.vs-content img {
-    width: 250px;
-    height: 200px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.Impressum {
-    display: flex;
-    justify-content: center;
-}
-
-.impressum_content {
-    padding: 70px;
-    background-color: #EFEFEF;
-    border-radius: 10px;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
