@@ -69,8 +69,10 @@
             <section class="recipe-content">
                 <div class="input-content">
                     <label for="portions">Zutaten für</label>
-                    <input type="number" id="portions" value="1" min="1" max="99" required>
-                    <button onclick="calculate()">Portionen</button>
+                    <div class="portion-input">
+                        <input class="portions" type="number" id="portions" value="1" min="1" max="99" required>
+                        <button onclick="calculate()">Portionen</button>
+                    </div>
                 </div>
 
                 <section class="ingredients-list">
