@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
+    <link rel="icon" href="./img/logo_small.png">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./basis.css">
     <script src="./script.js"></script>
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+    <div class="content">
     <header>
         <div class="logo">
             <a href="./index.html">
@@ -22,12 +24,27 @@
             </a>
         </div>
         <nav>
-            <a class="start" href="index.html">Start</a>
+            <a href="index.html">Start</a>
             <a href="#">Rezept des Tages</a>
             <a href="contact.html">Kontakt</a>
-            <a href="impress.html">Impressum</a>
+            <a class="underline" href="impress.html">Impressum</a>
         </nav>
+
+            <a class="burger_container" onclick="toggleRespMenu()" href=" #">
+                <div>
+                    <div class="burger_menu"></div>
+                    <div class="burger_menu"></div>
+                    <div class="burger_menu"></div>
+                </div>
+            </a>
     </header>
+
+        <div id="resp_menu" class="resp_menu_box resp_menu_closed">
+            <a href="index.html">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a class="resp_underline" href="impress.html">Impressum</a>
+        </div>
 
     <main>
         <section class="impressum">
@@ -44,11 +61,14 @@
                 </p>
             </div>
         </section>
+
     </main>
 
     <footer>
         <div class="logo_weiß">
+                <a href="index.html">
             <img src="./img/logo.png" alt="kochwelt_logo">
+                </a>
         </div>
         <div class="social_media">
             <a href="https://facebook.com">
@@ -62,7 +82,8 @@
             </a>
         </div>
     </footer>
-
+    </div>
 </body>
+<script src="./script.js"></script>
 
 </html>

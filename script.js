@@ -1,5 +1,5 @@
 function calculate() {
-    const grundElement = document.getElementById('portions').value / 4;
+    const grundElement = document.getElementById('portions').value;
 
     document.querySelectorAll('.amount').forEach(el => {
         const basevalue = el.dataset.base ?? el.innerHTML;

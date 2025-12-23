@@ -14,116 +14,148 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="./index.html">
-                <img src="./img/logo.png" alt="kochwelt_logo">
+    <div class="content">
+        <header>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="kochwelt_logo">
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Start</a>
+                <a href="#">Rezept des Tages</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="impress.html">Impressum</a>
+            </nav>
+
+            <a class="burger_container" onclick="toggleRespMenu()" href=" #">
+                <div>
+                    <div class="burger_menu"></div>
+                    <div class="burger_menu"></div>
+                    <div class="burger_menu"></div>
+                </div>
             </a>
-        </div>
-        <nav>
+        </header>
+
+        <div id="resp_menu" class="resp_menu_box resp_menu_closed">
             <a href="index.html">Start</a>
             <a href="#">Rezept des Tages</a>
             <a href="contact.html">Kontakt</a>
             <a href="impress.html">Impressum</a>
-        </nav>
+        </div>
 
-    </header>
-
-    <main>
-        <section class="topic-content">
-            <h1>Pelmeni</h1>
-            <img class="preview-image" src="./img/pelmeni.png" alt="Bild von Pelmeni">
-            <div class="quick-content">
-                <div class="quick-info">
-                    <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
-                    <p>30 Min</p>
-                </div>
-                <div class="quick-info">
-                    <img class="icons" src="./img/brain-solid.svg" alt="Gehirn Icon">
-                    <p>simpel</p>
-                </div>
-                <div class="quick-info">
-                    <img class="icons" src="./img/calendar-alt-regular.svg" alt="Kalender Icon">
-                    <p>12.12.2025</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="line"></div>
-
-        <section class="recipe-content">
-            <div class="input-content">
-                <label for="portions">Zutaten für</label>
-                <div class="portion-input">
-                    <input type="number" id="portions" value="1" min="1" max="99" required>
-                    <button onclick="">Portionen</button>
-                </div>
-            </div>
-
-            <section class="ingredients-list">
-                <table>
-                    <tr>
-                        <td><span>1</span> Packung runde Dumplings</td>
-                    </tr>
-                    <tr>
-                        <td><span>300</span> g Hackfleisch</td>
-                    </tr>
-                    <tr>
-                        <td><span>1</span> Zwiebel</td>
-                    </tr>
-                    <tr>
-                        <td><span>1</span> EL Salz</td>
-                    </tr>
-                    <tr>
-                        <td><span>1</span> EL Pfeffer</td>
-                    </tr>
-                    <tr>
-                        <td><span>1</span> Schuss kaltes Wasser</td>
-                    </tr>
-                </table>
-            </section>
-
-            <section class="quick-section">
-                <h2>Zubereitung</h2>
+        <main>
+            <section class="topic-content">
+                <h1>Pelmeni</h1>
+                <img class="preview-image" src="./img/pelmeni.png" alt="Bild von Pelmeni">
                 <div class="quick-content">
                     <div class="quick-info">
                         <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
-                        <p>Vorbereitung ca. <span class="time" data-grund="10">30</span> Minuten</p>
+                        <p>30 Min</p>
                     </div>
                     <div class="quick-info">
-                        <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
-                        <p>Gesamtzeit ca. <span class="time" data-grund="15">45</span> Minuten</p>
+                        <img class="icons" src="./img/brain-solid.svg" alt="Gehirn Icon">
+                        <p>simpel</p>
+                    </div>
+                    <div class="quick-info">
+                        <img class="icons" src="./img/calendar-alt-regular.svg" alt="Kalender Icon">
+                        <p>12.12.2025</p>
                     </div>
                 </div>
-                <p class="preparation">Für die Zubereitung geben Sie jeweils einen Teelöffel einer geschmeidigen Füllung aus Hackfleisch, geriebener Zwiebel, Salz, Pfeffer und etwas Wasser auf eine Teighülle, falten diese nach dem Befeuchten der Ränder zum Halbmond zusammen und lassen die Pelmeni nach dem Aufsteigen im siedenden Salzwasser noch zwei bis drei Minuten ziehen.</p>
             </section>
-        </section>
-        <section class="created">
-            <h3>Rezept erstellt von</h3>
-            <div class="creator">
-                <img src="./img/profile.png">
-                <p>Danilo</p>
+
+            <div class="line"></div>
+
+            <section class="recipe-content">
+                <div class="input-content">
+                    <label for="portions">Zutaten für</label>
+                    <input type="number" id="portions" value="1" min="1" max="99" required>
+                    <button onclick="calculate()">Portionen</button>
+                </div>
+
+                <section class="ingredients-list">
+                    <table>
+                        <tr>
+                            <td>
+                                <p><span class="amount">1</span> Packung runde Dumplings</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span class="amount">300</span> g Hackfleisch</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span class="amount">1</span> Zwiebel</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span class="amount">1</span> EL Salz</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span class="amount">1</span> EL Pfeffer</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span>1</span> Schuss kaltes Wasser</p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section class="quick-section">
+                    <h2>Zubereitung</h2>
+                    <div class="quick-content">
+                        <div class="quick-info">
+                            <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
+                            <p>Vorbereitung ca. <span class="time" data-grund="10">30</span> Minuten</p>
+                        </div>
+                        <div class="quick-info">
+                            <img class="icons" src="./img/clock-regular.svg" alt="Uhr Icon">
+                            <p>Gesamtzeit ca. <span class="time" data-grund="15">45</span> Minuten</p>
+                        </div>
+                    </div>
+                    <p class="preparation">Für die Zubereitung geben Sie jeweils einen Teelöffel einer geschmeidigen
+                        Füllung aus Hackfleisch, geriebener Zwiebel, Salz, Pfeffer und etwas Wasser auf eine Teighülle,
+                        falten diese nach dem Befeuchten der Ränder zum Halbmond zusammen und lassen die Pelmeni nach
+                        dem Aufsteigen im siedenden Salzwasser noch zwei bis drei Minuten ziehen.</p>
+                </section>
+            </section>
+            <section class="created">
+                <h3>Rezept erstellt von</h3>
+                <div class="creator">
+                    <img src="./img/profile.png">
+                    <p>Danilo</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="logo_weiß">
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="kochwelt_logo">
+                </a>
             </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="logo_weiß">
-            <img src="./img/logo.png" alt="kochwelt_logo">
-        </div>
-        <div class="social_media">
-            <a href="https://facebook.com">
-                <img src="./img/Find-us-on-facebook.svg" alt="Find_us_on_facebook_vector">
-            </a>
-            <a href="https://instagram.com">
-                <img src="./img/follow-us-on-instagram-icon.svg" alt="follow_us_on_instagram_vector">
-            </a>
-            <a href="https://x.com/home">
-                <img src="./img/follow-us-on-twitter.svg" alt="follo_us_on_twitter_vector">
-            </a>
-        </div>
-    </footer>
+            <div class="social_media">
+                <a href="https://facebook.com">
+                    <img src="./img/Find-us-on-facebook.svg" alt="Find_us_on_facebook_vector">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./img/follow-us-on-instagram-icon.svg" alt="follow_us_on_instagram_vector">
+                </a>
+                <a href="https://x.com/home">
+                    <img src="./img/follow-us-on-twitter.svg" alt="follo_us_on_twitter_vector">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
