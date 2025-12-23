@@ -1,5 +1,3 @@
-
-
 .topic-content {
     display: flex;
     flex-direction: column;
@@ -101,13 +99,13 @@
 }
 
 .ingredients-list tr td:first-child {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .ingredients-list tr td:last-child {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .preparation {
@@ -157,7 +155,7 @@
 
 @media (max-width: 1440px) {
     .topic-content {
-            padding: 50px 20px 50px 20px;
+        padding: 50px 20px 50px 20px;
     }
 
     .recipe-content {
