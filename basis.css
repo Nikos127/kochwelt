@@ -115,12 +115,12 @@ footer img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 20px;
 }
 
 .social_media img {
     height: 35px;
     width: auto;
-    margin-left: 30px
 }
 
 .social_media img:hover {
@@ -176,7 +176,6 @@ footer img {
 
     .social_media img {
         height: 20px;
-        width: 100px;
     }
 }
 
@@ -221,7 +220,6 @@ footer img {
         justify-content: flex-end;
         height: 35px;
         width: auto;
-        margin-left: 30px
     }
 }
 
