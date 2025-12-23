@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spaghetti Carbonara</title>
     <link rel="icon" href="./img/logo_small.png">
-    <link rel="stylesheet" href="basis.css">
-    <link rel="stylesheet" href="rezept.css">
+    <link rel="stylesheet" href="./basis.css">
+    <link rel="stylesheet" href="./rezept.css">
     <script src="./script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div class="content">
     <header>
         <div class="logo">
+                <a href="./index.html">
             <img src="./img/logo.png" alt="kochwelt_logo">
-
+                </a>
         </div>
         <nav>
             <a href="index.html">Start</a>
@@ -26,7 +28,21 @@
             <a href="impress.html">Impressum</a>
         </nav>
 
+            <a class="burger_container" onclick="toggleRespMenu()" href=" #">
+                <div>
+                    <div class="burger_menu"></div>
+                    <div class="burger_menu"></div>
+                    <div class="burger_menu"></div>
+                </div>
+            </a>
     </header>
+
+        <div id="resp_menu" class="resp_menu_box resp_menu_closed">
+            <a href="index.html">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="impress.html">Impressum</a>
+        </div>
 
     <main>
         <section class="topic-content">
@@ -54,31 +70,33 @@
             <div class="input-content">
                 <label for="portions">Zutaten für</label>
                 <div class="portion-input">
-                    <input type="number" id="portions" value="1" min="1" max="99" required>
-                    <button onclick="">Portionen</button>
+                    <input class="portions" type="number" id="portions" value="1" min="1" max="99" required>
+                    <button onclick="calculate()">Portionen</button>
                 </div>
+
             </div>
 
             <section class="ingredients-list">
                 <table>
                     <tr>
-                        <td><span>100</span>g Spaghetti</td>
+                        <td><span class="amount">100</span>g Spaghetti</td>
                     </tr>
                     <tr>
-                        <td><span>40</span>g Pancetta</td>
+                        <td><span class="amount">40</span>g Pancetta</td>
                     </tr>
                     <tr>
-                        <td><span>2</span> Ei (Größe M)</td>
+                        <td><span class="amount">2</span> Ei (Größe M)</td>
                     </tr>
                     <tr>
-                        <td><span>25</span>g Pecorino Romano</td>
+                        <td><span class="amount">25</span>g Pecorino Romano</td>
                     </tr>
                     <tr>
-                        <td><span>1</span>Prise Salz für das Nudelwasser</td>
+                        <td><span>1</span> Prise Salz für das Nudelwasser</td>
                     </tr>
                 </table>
             </section>
 
+                <section>
             <section class="quick-section">
                 <h2>Zubereitung</h2>
                 <div class="quick-content">
@@ -106,7 +124,9 @@
 
     <footer>
         <div class="logo_weiß">
+                <a href="index.html">
             <img src="./img/logo.png" alt="kochwelt_logo">
+                </a>
         </div>
         <div class="social_media">
             <a href="https://facebook.com">
@@ -120,6 +140,8 @@
             </a>
         </div>
     </footer>
+    </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
