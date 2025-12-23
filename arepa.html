@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arepa Choclo</title>
     <link rel="icon" href="./img/logo_small.png">
-    <link rel="stylesheet" href="basis.css">
-    <link rel="stylesheet" href="rezept.css">
+    <link rel="stylesheet" href="./basis.css">
+    <link rel="stylesheet" href="./rezept.css">
     <script src="./script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div class="content">
     <header>
         <div class="logo">
              <a href="./index.html">
@@ -27,7 +28,21 @@
             <a href="impress.html">Impressum</a>
         </nav>
 
+            <a class="burger_container" onclick="toggleRespMenu()" href=" #">
+                <div>
+                    <div class="burger_menu"></div>
+                    <div class="burger_menu"></div>
+                    <div class="burger_menu"></div>
+                </div>
+            </a>
     </header>
+
+        <div id="resp_menu" class="resp_menu_box resp_menu_closed">
+            <a href="index.html">Start</a>
+            <a href="#">Rezept des Tages</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="impress.html">Impressum</a>
+        </div>
 
     <main>
         <section class="topic-content">
@@ -55,33 +70,34 @@
             <div class="input-content">
                 <label for="portions">Zutaten für</label>
                 <div class="portion-input">
-                    <input type="number" id="portions" value="1" min="1" max="99" required>
-                    <button onclick="">Portionen</button>
+                    <input class="portions" type="number" id="portions" value="1" min="1" max="99" required>
+                    <button onclick="calculate()">Portionen</button>
                 </div>
+
             </div>
 
             <section class="ingredients-list">
                 <table>
                     <tr>
-                        <td><span>300</span> g frischer Mais (choclo)</td>
+                        <td><span class="amount">300</span>g frischer Mais (choclo)</td>
                     </tr>
                     <tr>
-                        <td><span>2</span> EL Zucker</td>
+                        <td><span class="amount">2</span> EL Zucker</td>
                     </tr>
                     <tr>
-                        <td><span>4</span> EL Milch</td>
+                        <td><span class="amount">4</span> EL Milch</td>
                     </tr>
                     <tr>
-                        <td><span>2</span> Prise (n) Salz</td>
+                        <td><span class="amount">2</span> Prise (n) Salz</td>
                     </tr>
                     <tr>
-                        <td><span>4</span> TL Butter</td>
+                        <td><span class="amount">4</span> TL Butter</td>
                     </tr>
                     <tr>
-                        <td><span>80</span> g Mozzarella (gerieben oder in Scheiben)</td>
+                        <td><span class="amount">80</span> g Mozzarella (gerieben oder in Scheiben)</td>
                     </tr>
                     <tr>
-                        <td><span>2</span> Eier</td>
+                        <td><span class="amount">2</span> Eier</td>
                     </tr>
                 </table>
             </section>
@@ -113,7 +129,9 @@
 
     <footer>
         <div class="logo_weiß">
+                <a href="index.html">
             <img src="./img/logo.png" alt="kochwelt_logo">
+                </a>
         </div>
         <div class="social_media">
             <a href="https://facebook.com">
@@ -127,6 +145,8 @@
             </a>
         </div>
     </footer>
+    </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
