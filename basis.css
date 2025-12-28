@@ -8,23 +8,22 @@
 
 header {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    height: 100px;
 }
 
 .site-container {
     max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 160px;
 }
 
 .logo img {
-    height: 96px;
+    height: 80px;
     width: auto;
 }
 
@@ -35,15 +34,16 @@ header {
 
 nav {
     display: flex;
-    gap: 30px;
-    padding-top: 64px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0;
 }
 
 nav a {
     color: black;
     text-decoration: none;
     font-weight: 600;
-    margin-left: 16px;
 }
 
 nav a:hover {
@@ -111,15 +111,14 @@ p {
 footer {
     background-color: rgb(35, 35, 35);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 40px 160px;
+    padding: 20px 0;
 }
 
 footer img {
     width: 200px;
     height: 60px;
-    margin-left: 32px;
 }
 
 .social_media {
@@ -151,70 +150,42 @@ footer img {
         font-size: 28px;
     }
 
-    /* Media Query Header*/
+    /* Footer Query Header*/
 
     header {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .logo img {
-        height: 35px;
+        height: 70px;
+        width: auto;
     }
-
-    /* Footer Query Header*/
 
     footer {
         flex-direction: column;
-        padding: 20px 15px;
     }
-
-    footer img {
-        margin-left: 0;
-    }
-
 
     .logo_weiß img {
         height: 50px;
         width: auto;
     }
 
-    .social_media {
-        display: flex;
-        justify-content: flex-end;
+    footer .site-container {
+        flex-direction: column;
         align-items: center;
-        margin-top: 40px;
+        gap: 20px;
     }
 
     .social_media img {
-        height: 20px;
+        height: 24px;
+        width: auto;
     }
 }
 
 
-
-
 @media (min-width: 768px) and (max-width: 1280px) {
 
-    /* Media Query Header*/
-
-    header {
-        padding: 0 60px;
-    }
-
-    .logo img {
-        height: 80px;
-    }
-
     /* Footer Query Header*/
-
-    footer {
-        padding: 50px 40px;
-    }
-
-    .social_media img {
-        height: 30px;
-        margin-left: 10px
-    }
 
     footer img {
         margin-left: 0;
@@ -224,13 +195,6 @@ footer img {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-    }
-
-    .social_media img {
-        display: flex;
-        justify-content: flex-end;
-        height: 35px;
-        width: auto;
     }
 }
 
@@ -244,6 +208,7 @@ footer img {
 
     .burger_container {
         display: flex;
+        align-items: center;
     }
 
     .burger_menu {
@@ -298,23 +263,13 @@ footer img {
     }
 }
 
-@media (max-width: 767px) {
-    .site-container {
-        padding: 0 10px;
-    }
+@media (min-width: 767px) and (max-width: 1460px) {
 
-    footer .site-container {
-        padding: 20px 15px;
-        flex-direction: column;
+    header {
+        padding: 0 20px;
     }
-}
-
-@media (min-width: 768px) and (max-width: 1280px) {
-    .site-container {
-        padding: 0 60px;
-    }
-
-    footer .site-container {
-        padding: 50px 40px;
+    
+    footer {
+        padding: 20px 20px;
     }
 }
