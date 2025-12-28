@@ -137,10 +137,6 @@
     text-align: center;
 }
 
-.vs-section p {
-    max-width: 800px;
-}
-
 .vs-content {
     display: flex;
     gap: 40px;
@@ -231,14 +227,16 @@
         height: 200px;
         aspect-ratio: 1 / 1;
     }
-
-    .vs-content {
-        padding: 0 20px;
-    }
 }
 
 @media (min-width:1440px) {
     .main-rec {
         max-width: 1440px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1480px) {
+    .vs-section {
+            padding: 40px 20px 100px 20px;
     }
 }
