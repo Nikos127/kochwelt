@@ -127,7 +127,6 @@
 .vs-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 40px 0 100px 0;
     gap: 30px;
     max-width: 1440px;
@@ -146,7 +145,7 @@
 .vs-content img {
     width: 250px;
     height: 200px;
-    border-radius: 8px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
