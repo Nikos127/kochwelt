@@ -263,7 +263,7 @@ footer img {
     }
 }
 
-@media (min-width: 767px) and (max-width: 1460px) {
+@media (min-width: 767px) and (max-width: 1480px) {
 
     header {
         padding: 0 20px;

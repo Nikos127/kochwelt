@@ -154,6 +154,8 @@
     object-fit: cover;
 }
 
+/* Impressum */
+
 .impressum {
     display: flex;
     flex-direction: column;
