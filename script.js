@@ -11,3 +11,20 @@ function calculate() {
 function toggleRespMenu() {
     document.getElementById('resp_menu').classList.toggle('resp_menu_closed')
 }
+
+function sendMail(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+
+    fetch("https://formspree.io/f/mgoeqjzg", {
+        method: "POST",
+        body: new FormData(event.target),
+        headers: {
+            "Accept": "application/json"
+        }
+    }).then(() => {
+        window.location.href = "./answer.html";
+    }).catch(error => {
+        console.log(error);
+    });
+}

@@ -50,20 +50,20 @@
     
     <main>
 
-        <form class="contact-content" action="answer.html" method="get">
+        <form class="contact-content" onsubmit="sendMail(event)" method="post">
             <h2>Kontaktiere uns</h2>
-                <div class="inputs">
+                <label class="inputs">
                     <p>Dein Name:</p><input type="text" name="name" required>
-                </div>
-                <div class="inputs">
+                </label>
+                <label class="inputs">
                     <p>Deine E-Mail:</p><input type="email" name="email" required>
-                </div>
-                <div class="inputs">
-                    <p>Deine Nachricht:</p><textarea name="Nachricht" required></textarea>
-                </div>
-                <div class="contact-button">
+                </label>
+                <label class="inputs">
+                    <p>Deine Nachricht:</p><textarea name="nachricht" required></textarea>
+                </label>
+                <label class="contact-button">
                     <button type="submit">Abschicken</button>
-                </div>
+                </label>
         </form>
     
     </main>
