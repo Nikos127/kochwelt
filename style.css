@@ -108,6 +108,7 @@
 .main-rec {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
     padding-top: 40px;
     gap: 120px
 }
