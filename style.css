@@ -19,7 +19,6 @@
     margin: 80px auto;
     max-width: 1440px;
     width: 100%;
-    padding: 0 24px;
     box-sizing: border-box;
     flex-wrap: wrap;
 }
@@ -91,6 +90,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     width: 100%;
 }
 
@@ -107,9 +107,10 @@
 
 .main-rec {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     padding-top: 40px;
+    box-sizing: border-box;
     gap: 120px
 }
 
@@ -266,7 +267,17 @@
 }
 
 @media (min-width: 767px) and (max-width: 1480px) {
+    article {
+        padding: 0 20px;
+    }
+
+    .new_rec_div {
+        padding: 40px 20px;
+    }
+    
     .vs-section {
             padding: 40px 20px 100px 20px;
     }
+
+
 }
