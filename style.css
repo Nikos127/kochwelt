@@ -206,6 +206,10 @@
 
 @media (max-width: 767px) {
 
+    article {
+        padding: 0 20px;
+    }
+
     .new_rec_div {
         padding-top: 80px;
         padding-bottom: 80px;
